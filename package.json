@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"scripts": {
-		"serve": "sirv pages"
+		"serve": "sirv pages --dev"
 	},
 	"devDependencies": {
 		"sirv-cli": "^2.0.2"
