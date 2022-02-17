@@ -1,5 +1,12 @@
 {
+	"scripts": {
+		"serve": "sirv pages"
+	},
 	"devDependencies": {
 		"sirv-cli": "^2.0.2"
+	},
+	"dependencies": {
+		"cheap-watch": "^1.0.4",
+		"ws": "^8.5.0"
 	}
 }
