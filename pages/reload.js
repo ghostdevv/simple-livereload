@@ -1,7 +1,14 @@
-const socketUrl = "ws://8000-ghostdevv-simpleliverelo-6zrumrwud23.ws-eu32.gitpod.io/";
+const socketUrl = "ws://localhost:8000";
 
 const socket = new WebSocket(socketUrl);
 
-socket.onmessage('reload', () => {
-    window.location.reload()
-})
+console.log('[live-reload] Connecting');
+
+socket.onopen = () => {
+    console.log('[live-reload] Connected')
+}
+
+socket.onmessage = () => {
+    console.log('[live-reload] Reloading');
+    window.location.reload();
+}
